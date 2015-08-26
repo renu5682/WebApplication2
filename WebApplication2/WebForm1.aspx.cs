@@ -11,7 +11,8 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           Response.Write(TriangleTester.GetTriangleType(1,1,1));            
+            Response.Write("TEST");
+            Response.Write(TriangleTester.GetTriangleType(1,1,1));            
         }
     }
 }
