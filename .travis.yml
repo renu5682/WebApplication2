@@ -1,2 +1,10 @@
 language: csharp
 solution: WebApplication2.sln
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: renu.ap@gmail.com
+   password: hE:cGIQ@5hyk
+   api: api.beta.ironfoundry.me
+   organization: RENU
+   space: staging
