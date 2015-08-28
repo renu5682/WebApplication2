@@ -1,5 +1,11 @@
 language: csharp
 solution: WebApplication2.sln
+install:
+  - nuget restore SimpleAddSubtractTool.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory SimpleAddSubtractToolTestRunner
+script:
+  - xbuild /p:Configuration=Release SimpleAddSubtractTool.sln
+  - mono ./SimpleAddSubtractToolTestRunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./SimpleAddSubtractToolTests/bin/Release/SimpleAddSubtractToolTests.dll
 deploy:
    edge: true
    provider: cloudfoundry
