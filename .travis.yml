@@ -1,3 +1,4 @@
+sudo: required
 language: csharp
 solution: WebApplication2.sln
 install:
