@@ -1,3 +1,14 @@
+--
 applications:
-- name: renuhello
-  host: windows2012
+  .:
+    name: renuhello
+    url: ${name}.${target-base}
+    framework:
+      name: dotNet
+      info:
+        mem: 128M
+        description: .Net Web Application
+        exec: 
+    mem: 128M
+    instances: 4
+    host: windows2012
