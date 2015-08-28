@@ -11,7 +11,7 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("TEST");
+            Response.Write("Get type of Triangle when all sides are same length.");
             Response.Write(TriangleTester.GetTriangleType(1,1,1));            
         }
     }
