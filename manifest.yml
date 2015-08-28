@@ -1,12 +1,9 @@
---
 applications:
-  .:
     name: renuhello
-    url: ${name}.${target-base}
     framework:
       name: dotNet
       info:
-        mem: 128M
+        mem: 512M
         description: .Net Web Application
         exec: 
     mem: 128M
