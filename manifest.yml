@@ -1,11 +1,11 @@
 applications:
-   -name: renuhello
+   - name: renuhello
     framework:
-      name: dotNet
+      name: aspdotnet
       info:
         mem: 512M
         description: .Net Web Application
         exec: 
     mem: 512M
-    instances: 4
+    instances: 1
     host: windows2012
