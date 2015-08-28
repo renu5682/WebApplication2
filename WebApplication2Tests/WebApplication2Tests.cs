@@ -13,6 +13,7 @@ namespace WebApplication2Tests
         public void EquilateralTriangleTest()
         {            
             Assert.AreEqual(TriangleType.Equilateral, TriangleTester.GetTriangleType(1,1,1));
+
         }
     }
 }
