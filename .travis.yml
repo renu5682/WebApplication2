@@ -14,4 +14,4 @@ deploy:
    password: hE:cGIQ@5hyk
    api: api.beta.ironfoundry.me
    organization: RENU
-   space: staging
+   space: development
