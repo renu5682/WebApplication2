@@ -1,2 +1,16 @@
 language: csharp
 solution: WebApplication2.sln
+install:
+  - nuget restore WebApplication2.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory WebApplication2TestRunner
+script:
+  - xbuild /p:Configuration=Release WebApplication2.sln
+  - mono ./WebApplication2lTestRunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WebApplication2Tests/bin/Release/WebApplication2Tests.dll
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: renu.ap@gmail.com
+   password: hE:cGIQ@5hyk
+   api: api.beta.ironfoundry.me
+   organization: RENU
+   space: staging
