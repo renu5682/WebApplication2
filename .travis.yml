@@ -15,3 +15,6 @@ deploy:
    api: api.beta.ironfoundry.me
    organization: RENU
    space: development
+applications:
+  name: renuhello
+  host: windows2012
