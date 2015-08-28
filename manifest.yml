@@ -1,6 +1,2 @@
 applications:
 - name: renuhello1
-  memory: 512M
-  host: windows2012
-  framework:
-      type: aspdotnet
