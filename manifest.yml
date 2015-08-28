@@ -1,3 +1,7 @@
 applications:
 - name: renuhello
-  host: windows2012
+  domain: beta.ironfoundry.me
+  host: renuhello
+  path: .
+  stack: windows2012
+
