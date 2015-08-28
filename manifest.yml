@@ -1,6 +1,6 @@
 applications:
 - name: renuhello
-  domain: ironfoundry.me
-  host: renuhello.beta
+  domain: beta.ironfoundry.me
+  host: renuhello
   path: .
 
