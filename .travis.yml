@@ -5,7 +5,7 @@ install:
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory WebApplication2TestRunner
 script:
   - xbuild /p:Configuration=Release WebApplication2.sln
-  - mono ./WebApplication2lTestRunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WebApplication2Tests/bin/Release/WebApplication2Tests.dll
+  - mono ./WebApplication2TestRunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WebApplication2Tests/bin/Release/WebApplication2Tests.dll
 deploy:
    edge: true
    provider: cloudfoundry
