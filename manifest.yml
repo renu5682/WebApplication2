@@ -4,4 +4,3 @@ applications:
   host: renuhello
   path: ./WebApplication2
   stack: windows2012
-
